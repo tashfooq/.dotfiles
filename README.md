@@ -13,3 +13,4 @@ to symlink all the neovim files to $HOME/.config/nvim
 - Install packer
 - Install all packer plugins
 - Install coc-tsserver and coc-prettier
+- Install a nerd font for the icons in Lua Line to show up
