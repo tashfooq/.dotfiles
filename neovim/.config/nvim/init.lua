@@ -7,4 +7,5 @@ require('cocconfig')
 require('neoscroll').setup()
 vim.cmd([[
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+let NERDTreeShowHidden=1
 ]])
