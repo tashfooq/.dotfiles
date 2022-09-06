@@ -8,7 +8,7 @@ use stow to automate symlinking
 `stow neovim`
 to symlink all the neovim files to $HOME/.config/nvim
 
-## Post symlink
+## Steps after symlinking
 - Remove kanagawa line from opts.lua
 - Install packer
 - Install all packer plugins
