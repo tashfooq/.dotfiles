@@ -38,6 +38,11 @@ map('n', '<C-p>', ':Telescope find_files<Return>', {})
 map('n', 'fff', ':Telescope live_grep<Return>', {})
 
 -- Terminal
-map('n', 'sst', ':split term://zsh<Return>', {})
-map('n', 'svt', ':vsplit term://zsh<Return>', {})
-map('t', '<Esc>', [[<C-\><C-n>]], {})
+map('n', 'sst', ':ToggleTerm size=20 direction=horizontal<Return>', {})
+map('n', 'svt', ':ToggleTerm size=40 direction=vertical<Return>', {})
+map('n', '<leader>t', ':ToggleTermToggleAll<Return>', {})
+-- map('t', '<Esc>', [[<C-\><C-n>]], {})
+map('t', 'jj', [[<C-\><C-n>]], {})
+
+-- Lazygit
+map('n', '<leader>gg', "<cmd>lua require('lazygitterm').git_client_toggle()<CR>", {})
