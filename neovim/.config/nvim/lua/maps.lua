@@ -36,3 +36,8 @@ map('n', '<leader>n', ':NERDTreeToggle<Return>', {})
 -- Telescope
 map('n', '<C-p>', ':Telescope find_files<Return>', {})
 map('n', 'fff', ':Telescope live_grep<Return>', {})
+
+-- Terminal
+map('n', 'sst', ':split term://zsh<Return>', {})
+map('n', 'svt', ':vsplit term://zsh<Return>', {})
+map('t', '<Esc>', [[<C-\><C-n>]], {})
