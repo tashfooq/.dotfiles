@@ -14,3 +14,4 @@ to symlink all the neovim files to $HOME/.config/nvim
 - Install all packer plugins
 - Install coc-tsserver and coc-prettier
 - Install a nerd font for the icons in Lua Line to show up
+- Install ripgrep because that's what telescope uses for live-grep
