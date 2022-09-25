@@ -14,11 +14,20 @@ return require('packer').startup(function(use)
   }
   use 'preservim/nerdtree'
   use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
-  use "rebelot/kanagawa.nvim"
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'karb94/neoscroll.nvim'
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
   end}
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+  -- Themes
+  use "rebelot/kanagawa.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use "EdenEast/nightfox.nvim"
 end)
 

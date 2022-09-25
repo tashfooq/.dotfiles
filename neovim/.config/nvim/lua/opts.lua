@@ -16,7 +16,7 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
 opt.termguicolors = true         -- bool: If term supports ui color then enable
 opt.title = true
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme duskfox")
 
 -- [[ Search ]]
 opt.ignorecase = true            -- bool: Ignore case in search patterns

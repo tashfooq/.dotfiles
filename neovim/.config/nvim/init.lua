@@ -5,8 +5,14 @@ require('plugins')
 require('lualinesetup')
 require('cocconfig')
 require('neoscroll').setup()
+require("toggleterm").setup{}
+require('Comment').setup()
+
+-- PRETTIER SET UP
 vim.cmd([[
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 let NERDTreeShowHidden=1
 ]])
-require("toggleterm").setup{}
+
+vim.g.coc_global_extensions = {'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-pairs'}
+
