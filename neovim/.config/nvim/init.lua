@@ -7,6 +7,7 @@ require('cocconfig')
 require('neoscroll').setup()
 require("toggleterm").setup{}
 require('Comment').setup()
+require('treesitterconfig')
 
 -- PRETTIER SET UP
 vim.cmd([[

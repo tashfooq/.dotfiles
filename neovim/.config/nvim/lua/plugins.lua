@@ -25,9 +25,12 @@ return require('packer').startup(function(use)
         require('Comment').setup()
     end
   }
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+  }
   -- Themes
-  use "rebelot/kanagawa.nvim"
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use "EdenEast/nightfox.nvim"
+  use 'folke/tokyonight.nvim'
 end)
 
