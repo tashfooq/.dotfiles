@@ -7,11 +7,10 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'ryanoasis/vim-devicons'
+  use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lua/plenary.nvim'
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+  use 'nvim-lualine/lualine.nvim'
+  use {'akinsho/bufferline.nvim', tag = "v2.*"}
   use 'preservim/nerdtree'
   use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
   use {'neoclide/coc.nvim', branch = 'release'}
