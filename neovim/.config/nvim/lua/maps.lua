@@ -8,10 +8,11 @@ map('n', 'sf', ':w<Return>', {})
 
 -- remap close buffer
 map('n', '<leader>x', ':q<Return>', {})
-map('n', '<leader>xx', ':qa<Return>', {})
+map('n', '<leader>X', ':qa<Return>', {})
 
 -- new tab
 map('n', 'te', ':tabedit<Return>', {silent = true})
+map('n', 'tc', ':bw<Return>', {silent = true})
 
 -- split window
 --these are for staying on the same buffer after split
