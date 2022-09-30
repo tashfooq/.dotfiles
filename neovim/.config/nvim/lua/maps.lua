@@ -6,15 +6,25 @@ vim.g.mapleader = " "
 map('i', 'jj', '<Esc>', {})
 map('n', 'sf', ':w<Return>', {})
 
+-- remap close buffer
+map('n', '<leader>x', ':q<Return>', {})
+
 -- new tab
 map('n', 'te', ':tabedit<Return>', {silent = true})
 
 -- split window
-map('n', 'ss', ':split<Return><C-w>w', {silent = true})
-map('n', 'sv', ':vsplit<Return><C-w>w', {silent = true})
+--these are for staying on the same buffer after split
+-- map('n', 'ss', ':split<Return><C-w>w', {silent = true})
+-- map('n', 'sv', ':vsplit<Return><C-w>w', {silent = true})
+--slower
+map('n', 'ss', ':split<Return>', {silent = true})
+map('n', 'sv', ':vsplit<Return>', {silent = true})
+--faster
+map('n', '<leader>h', ':split<Return>', {silent = true})
+map('n', '<leader>v', ':vsplit<Return>', {silent = true})
 
 -- move window
-map('n', '<Space>', '<C-w>w', {})
+map('n', '<leader>', '<C-w>w', {})
 map('', 's<left>', '<C-w>h', {})
 map('', 's<up>', '<C-w>k', {})
 map('', 's<down>', '<C-w>j', {})
