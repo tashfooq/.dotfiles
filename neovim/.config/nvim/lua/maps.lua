@@ -8,6 +8,7 @@ map('n', 'sf', ':w<Return>', {})
 
 -- remap close buffer
 map('n', '<leader>x', ':q<Return>', {})
+map('n', '<leader>xx', ':qa<Return>', {})
 
 -- new tab
 map('n', 'te', ':tabedit<Return>', {silent = true})
