@@ -8,6 +8,8 @@ require('neoscroll').setup()
 require("toggleterm").setup{}
 require('Comment').setup()
 require('treesitterconfig')
+require('gitsigns').setup()
+require('telescopeconfig')
 
 -- PRETTIER SET UP
 vim.cmd([[

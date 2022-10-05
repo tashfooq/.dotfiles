@@ -58,3 +58,7 @@ map('t', 'jj', [[<C-\><C-n>]], {})
 
 -- Lazygit
 map('n', '<leader>gg', "<cmd>lua require('lazygitterm').git_client_toggle()<CR>", {})
+
+-- Copy to clipboard
+map('n', '<leader>y', [["+y]], {})
+map('v', '<leader>y', [["+y]], {})

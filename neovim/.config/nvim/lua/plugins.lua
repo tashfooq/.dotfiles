@@ -29,6 +29,12 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
+  -- Git
+  use {
+    'lewis6991/gitsigns.nvim',
+    tag = 'release',
+  }
+  use 'tpope/vim-fugitive'
   -- Themes
   use 'folke/tokyonight.nvim'
 end)
