@@ -46,7 +46,7 @@ map('n', '<C-w><down>', '<C-w>-', {})
 map('n', '<leader>n', ':NERDTreeToggle<Return>', {})
 
 -- Telescope
-map('n', '<C-p>', ':Telescope find_files<Return>', {})
+map('n', '<C-p>', ':Telescope find_files hidden=true<Return>', {})
 map('n', 'fff', ':Telescope live_grep<Return>', {})
 
 -- Terminal
