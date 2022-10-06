@@ -52,7 +52,7 @@ map('n', 'fff', ':Telescope live_grep<Return>', {})
 -- Terminal
 map('n', 'sst', ':ToggleTerm size=20 direction=horizontal<Return>', {})
 map('n', 'svt', ':ToggleTerm size=80 direction=vertical<Return>', {})
-map('n', '<leader>t', ':ToggleTermToggleAll<Return>', {})
+map('n', '<leader>t', ':ToggleTerm direction=tab<Return>', {})
 -- map('t', '<Esc>', [[<C-\><C-n>]], {})
 map('t', 'jj', [[<C-\><C-n>]], {})
 
