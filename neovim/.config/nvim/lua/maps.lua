@@ -11,19 +11,19 @@ map('n', '<leader>x', ':q<Return>', {})
 map('n', '<leader>X', ':qa<Return>', {})
 
 -- new tab
-map('n', 'te', ':tabedit<Return>', {silent = true})
-map('n', 'tc', ':bw<Return>', {silent = true})
+map('n', 'te', ':tabedit<Return>', { silent = true })
+map('n', 'tc', ':bw<Return>', { silent = true })
 
 -- split window
 --these are for staying on the same buffer after split
 -- map('n', 'ss', ':split<Return><C-w>w', {silent = true})
 -- map('n', 'sv', ':vsplit<Return><C-w>w', {silent = true})
 --slower
-map('n', 'ss', ':split<Return>', {silent = true})
-map('n', 'sv', ':vsplit<Return>', {silent = true})
+map('n', 'ss', ':split<Return>', { silent = true })
+map('n', 'sv', ':vsplit<Return>', { silent = true })
 --faster
-map('n', '<leader>h', ':split<Return>', {silent = true})
-map('n', '<leader>v', ':vsplit<Return>', {silent = true})
+map('n', '<leader>h', ':split<Return>', { silent = true })
+map('n', '<leader>v', ':vsplit<Return>', { silent = true })
 
 -- move window
 map('n', '<leader>', '<C-w>w', {})

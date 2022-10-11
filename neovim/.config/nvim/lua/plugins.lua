@@ -10,18 +10,18 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use {'akinsho/bufferline.nvim', tag = "v2.*"}
+  use { 'akinsho/bufferline.nvim', tag = "v2.*" }
   use 'preservim/nerdtree'
-  use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
-  use {'neoclide/coc.nvim', branch = 'release'}
+  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' }
+  use { 'neoclide/coc.nvim', branch = 'release' }
   use 'karb94/neoscroll.nvim'
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  use { "akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
-  end}
+  end }
   use {
     'numToStr/Comment.nvim',
     config = function()
-        require('Comment').setup()
+      require('Comment').setup()
     end
   }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -38,4 +38,3 @@ return require('packer').startup(function(use)
   -- Themes
   use 'folke/tokyonight.nvim'
 end)
-
