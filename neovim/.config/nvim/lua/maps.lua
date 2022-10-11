@@ -62,3 +62,6 @@ map('n', '<leader>gg', "<cmd>lua require('lazygitterm').git_client_toggle()<CR>"
 -- Copy to clipboard
 map('n', '<leader>y', [["+y]], {})
 map('v', '<leader>y', [["+y]], {})
+
+-- Fugitive
+map('n', '<leader>gs', ":G <Return>", {})
