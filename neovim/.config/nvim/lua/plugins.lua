@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
   use { 'akinsho/bufferline.nvim', tag = "v2.*" }
   use 'preservim/nerdtree'
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' }
-  use { 'neoclide/coc.nvim', branch = 'release' }
   use 'karb94/neoscroll.nvim'
   use { "akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
@@ -37,4 +36,8 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   -- Themes
   use 'folke/tokyonight.nvim'
+  -- LSP
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "neovim/nvim-lspconfig"
 end)
