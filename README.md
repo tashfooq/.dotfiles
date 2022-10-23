@@ -16,8 +16,13 @@ to symlink all the neovim files to $HOME/.config/nvim
 - Install ripgrep because that's what telescope uses for live-grep
 - Install lazygit and git-delta
 
-## LazyGit Config
+## Fedora specific
+Need to install gnu c++ compiler for tree-sitter
+`
+sudo dnf install g++
+`
 
+## LazyGit Config
 `
 git:
   paging:
