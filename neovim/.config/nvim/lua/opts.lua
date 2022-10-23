@@ -16,7 +16,7 @@ opt.fileencoding = 'utf8' -- str:  File encoding to use
 opt.syntax = "ON" -- str:  Allow syntax highlighting
 opt.termguicolors = true -- bool: If term supports ui color then enable
 opt.title = true
-vim.cmd("colorscheme tokyonight-night")
+vim.cmd("colorscheme tokyonight-storm")
 require("bufferline").setup {}
 
 -- [[ Search ]]
