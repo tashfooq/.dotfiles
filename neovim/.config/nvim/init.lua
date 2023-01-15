@@ -15,6 +15,7 @@ require('mason-lspconfig').setup()
 require('lsnull')
 require('cmpconf')
 require('prettiersetup')
+require('nvim-autopairs').setup()
 
 
 vim.cmd([[
