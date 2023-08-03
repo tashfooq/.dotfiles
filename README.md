@@ -12,7 +12,7 @@ to symlink all the neovim files to $HOME/.config/nvim
 - Remove kanagawa line from opts.lua
 - Install packer
 - Install all packer plugins
-- Install a nerd font for the icons in Lua Line to show up
+- Install a nerd font for the icons in Lua Line to show up (Inconsolata Nerd Font)
 - Install ripgrep because that's what telescope uses for live-grep
 - Install lazygit and git-delta
 
