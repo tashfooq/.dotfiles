@@ -1,9 +1,0 @@
-configuration {
-  modes: [ combi ];
-  combi-modes: [ window, drun, run ];
-  show-icons: true;
-}
-
-@theme "ark-dark"
- 
-/* Insert theme modifications after this */
