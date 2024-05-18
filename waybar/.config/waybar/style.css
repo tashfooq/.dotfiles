@@ -1,102 +1,92 @@
-@import "mocha.css";
-
-@define-color base00 #181818;
-@define-color base01 #2b2e37;
-@define-color base02 #3b3e47;
-@define-color base03 #585858;
-@define-color base04 #b8b8b8;
-@define-color base05 #d8d8d8;
-@define-color base06 #e8e8e8;
-@define-color base07 #f8f8f8;
-@define-color base08 #ab4642;
-@define-color base09 #dc9656;
-@define-color base0A #f7ca88;
-@define-color base0B #a1b56c;
-@define-color base0C #86c1b9;
-@define-color base0D #7cafc2;
-@define-color base0E #ba8baf;
-@define-color base0F #a16946;
-
 * {
-  transition: none;
-  box-shadow: none;
+  font-family:
+    SpaceMono Nerd Font,
+    feather;
+  font-weight: 600;
+  font-size: 8.5pt;
+  color: #c0caf5;
 }
 
-#waybar {
-	font-family: 'Inconsolata Nerd Font'; 
-	font-size: 0.9em;
-	font-weight: 400;
-  /* color: @base04; */
-  color: @text;
-  /* background: @base01; */
-  background: @base;
+/* main waybar */
+window#waybar {
+  background: rgba(26, 27, 38, 0);
 }
 
-#workspaces {
-  margin: 0 4px;
+/* when hovering over modules */
+tooltip {
+  background: #1e1e2e;
+  border-radius: 5%;
 }
 
 #workspaces button {
-  margin: 4px 0;
-  padding: 0 4px;
-  color: @base05;
+  padding: 2px;
 }
 
-#workspaces button.visible {
-}
-
+/* Sets active workspace to have a solid line on the bottom */
 #workspaces button.active {
-  border-radius: 4px;
-  background-color: @overlay0;
+  border-bottom: 3px solid #7aa2f7;
+  border-radius: 0;
+  margin-top: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* More workspace stuff for highlighting on hover */
+#workspaces button.focused {
+  color: #a6adc8;
 }
 
 #workspaces button.urgent {
-  color: rgba(238, 46, 36, 1);
+  color: #f7768e;
 }
 
+#workspaces button:hover {
+  background: #11111b;
+  color: #cdd6f4;
+}
+
+/* Sets background, padding, margins, and borders for (all) modules */
+#workspaces,
+#clock,
+#window,
+#temperature,
+#cpu,
+#memory,
+#wireplumber,
+#tray,
+#battery {
+  background: rgba(26, 27, 38, 0.6);
+  padding: 0 10px;
+  border: 0;
+  /* margin-top: 4px; */
+}
+
+#workspaces {
+  padding-right: 0px;
+}
+
+/* Hide window module when not focused on window or empty workspace */
+window#waybar.empty #window {
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+/* Set up rounding to make these modules look like separate pills */
 #tray {
-  margin: 4px 4px 4px 4px;
-  border-radius: 4px;
-  background-color: @overlay0;
-}
-
-#tray * {
-  padding: 0 6px;
-  border-left: 1px solid @base00;
-}
-
-#tray *:first-child {
-  border-left: none;
-}
-
-#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature {
-  margin: 4px 0;
-  padding: 0 6px;
-  background-color: @overlay0;
-  border-radius: 4px;
-  min-width: 20px;
-}
-
-#pulseaudio.muted {
-  color: @base0F;
-}
-
-#pulseaudio.bluetooth {
-  color: @base0C;
-}
-
-#clock {
-  margin-left: 0px;
+  border-radius: 12px;
   margin-right: 4px;
-  background-color: transparent;
-}
-
-#temperature.critical {
-  color: @base0F;
 }
 
 #window {
-  font-size: 0.9em;
-	font-weight: 400;
-	font-family: sans-serif;
+  border-radius: 12px;
+}
+
+/* close right side of bar */
+#temperature {
+  border-radius: 12px 0 0 12px;
+}
+
+/* close left side of bar */
+#battery {
+  border-radius: 0 12px 12px 0;
 }
