@@ -1,11 +1,10 @@
 return {
-  { "EdenEast/nightfox.nvim" },
-  { "sainnhe/sonokai" },
+  { "rose-pine/neovim" },
   { "Mofiqul/vscode.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vscode",
+      colorscheme = "rose-pine-moon",
     },
   },
 }
