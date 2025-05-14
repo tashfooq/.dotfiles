@@ -1,10 +1,12 @@
 return {
-  { "rose-pine/neovim" },
   { "Mofiqul/vscode.nvim" },
+  { "neanias/everforest-nvim" },
+  { "ellisonleao/gruvbox.nvim" },
+  { "rebelot/kanagawa.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine-moon",
+      colorscheme = "kanagawa",
     },
   },
 }
